@@ -77,4 +77,3 @@ y = -(w[0] * x + b) / w[1]
 plt.plot(x, y, color='green')
 plt.show()
 
-
