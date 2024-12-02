@@ -59,9 +59,15 @@ print("w = ", w)
 print("b = ", b)
 
 # make prediction
-X_test = np.array([[1, 1.5], [2, 1], [1.5, 1]])
+X_test = np.array([[1, 1.5], [2, 1], [1.5, 1],[4.0,4]])
 y_pred = predict(X_test,w,b)
 print(y_pred)
+
+for i in range(y_pred.shape[0]):
+    if y_pred[i] > 0.5:
+        print("class 1")
+    else:
+        print("class 0")
 
 
 plt.scatter(X_class0[:,0], X_class0[:,1], color='red')
